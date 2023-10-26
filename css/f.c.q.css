@@ -159,7 +159,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 .footer .container .dvlop h5 {font-size: 20px;}
 .footer .container .dvlop li {font-size: 15px;padding: 10px;}
 @media (max-width:992px) {.footer .container {flex-direction: column;text-align: center;}.footer .container .map iframe {margin-top: 10px;}}
-@media (max-width:767px) {.footer .container .map iframe {width: 350px;}}
+@media (max-width:767px) {.footer .container .map iframe {width: 300px;}}
 /* end footer */
 
 
