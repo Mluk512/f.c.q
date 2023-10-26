@@ -69,7 +69,7 @@ header .container ul li a:hover {color: #85153f;}
 header .container ul li:first-child a {color: var(--main-color);}
 header .container .image img {width: 70px;max-width: 100%;}
 @media (max-width:992px) {header .container {flex-direction: column;} header .container .image {order: -1;margin-bottom: 20px;}}
-@media (max-width:767px) { header .container ul li a {padding: 0px;font-size: 8px;}}
+@media (max-width:767px) { header .container ul li a {padding: 5px;font-size: 8px;}}
 /* end header */
 
 /* start landing */
