@@ -155,7 +155,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 .Navigation .container .rounded {background: none;}
 .Navigation .container .rounded p {color: white;}
 .Navigation .container .rounded .d-none {}
-.Navigation .container .rounded .d-none .row {}
+.Navigation .container .rounded .d-none .row {background-color:var(--main-color-alt)}
 .Navigation .container .rounded .d-none .row table {}
 .Navigation .container .rounded .d-none .row table tbody {}
 .Navigation .container .rounded .d-none .row table tbody tr {;}
