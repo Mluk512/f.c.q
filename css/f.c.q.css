@@ -59,8 +59,10 @@ ul {
 /* end global rulse */
 /* ---------------------------- */
 /* start header */
-header {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 1;margin: auto;}
-header .container {display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: relative;margin-top: 20px;}
+header {top: 0;left: 0;width: 100%;height: 100%;z-index: 110;margin: auto;position: fixed;}
+header::before {content: "";top: 0;right: 0;width: 100%;height:18%;background-image: linear-gradient(rgba(0 0 0 / 100%),rgba(0 0 0 / 70%),rgba(0 0 0 / 0%));position: absolute;z-index:100;}
+
+header .container {display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: relative;margin-top: 20px;z-index: 150;}
 header .container::before {content: "";background-color: white;height: 1px;width: calc(100% - 50px);position: absolute;bottom: -20px;left: 15px;}
 header .container ul {display: flex;}
 header .container ul li {position: relative;}
@@ -68,8 +70,8 @@ header .container ul li a { color: white;padding:19px; font-size: 15px;font-weig
 header .container ul li a:hover {color: #85153f;}
 header .container ul li:first-child a {color: var(--main-color);}
 header .container .image img {width: 70px;max-width: 100%;}
-@media (max-width:992px) {header .container {flex-direction: column;} header .container .image {order: -1;margin-bottom: 20px;}}
-@media (max-width:767px) { header .container ul li a {padding: 5px;font-size: 8px;}}
+@media (max-width:992px) {header .container {flex-direction: column;} header .container .image {order: -1;margin-bottom: 20px;}header {position: absolute;}}
+@media (max-width:767px) { header .container ul li a {padding: 10px;font-size: 8px;}header {position: absolute;}}
 /* end header */
 
 /* start landing */
@@ -161,10 +163,3 @@ header .container .image img {width: 70px;max-width: 100%;}
 @media (max-width:992px) {.footer .container {flex-direction: column;text-align: center;}.footer .container .map iframe {margin-top: 10px;}}
 @media (max-width:767px) {.footer .container .map iframe {width: 300px;}}
 /* end footer */
-
-
-
-
-
-
-
