@@ -148,6 +148,21 @@ header .container .image img {width: 70px;max-width: 100%;}
 .contactus .container form input[type="submit"] {; width: 126px; background-color: var(--main-color); color: white; padding: 10px 20px; border: 1px solid white; border-left: none; text-transform: uppercase; border-radius:0 15px 15px 0 ; -webkit-border-radius:0 15px 15px 0 ; -moz-border-radius:0 15px 15px 0 ; -ms-border-radius:0 15px 15px 0 ; -o-border-radius:0 15px 15px 0 ; }
 /* end contactus */
 
+/* start Navigation */
+.Navigation {background-color: var(--main-color);padding-top: var(--main-top);padding-bottom: var(--main-bottom);position: relative;}
+.Navigation::before {content: "";background-image: url(../images/footpall002.png);width: 100%;min-height: 100vh;position: absolute;top: 20px;right: 0px ;}
+.Navigation .container {background-color:;}
+.Navigation .container .rounded {background: none;}
+.Navigation .container .rounded p {color: white;}
+.Navigation .container .rounded .d-none {}
+.Navigation .container .rounded .d-none .row {}
+.Navigation .container .rounded .d-none .row table {}
+.Navigation .container .rounded .d-none .row table tbody {}
+.Navigation .container .rounded .d-none .row table tbody tr {;}
+.Navigation .container .rounded .d-none .row table tbody tr td {color:#85153f;}
+.Navigation .container .rounded .d-none .row table tbody tr td a { color:black;}
+/* end Navigation */
+
 /* start footer */
 .footer {padding-top: var(--main-top);padding-bottom: var(--main-bottom);position: relative;color: white;background-color: #222222;}
 .footer .container {display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: relative;gap: 10px;}
