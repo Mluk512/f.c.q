@@ -171,12 +171,11 @@ header .container .image img {width: 70px;max-width: 100%;}
 .footer .container .text .men li {font-size: 14px;padding: 10px;}
 .footer .container .text .such {}
 .footer .container .text .such a { display: inline-flex; color: white; background-color:#313131 ; margin-right: 10px; padding:10px 13px; font-size: 15px; border: 2px solid white; transition:var(--main-tran) ; -webkit-transition:var(--main-tran) ; -moz-transition:var(--main-tran) ; -ms-transition:var(--main-tran) ; -o-transition:var(--main-tran) ; }
-.footer .container .text .such a i {}
-.footer .container .text .such a i:hover { color: rgb(0, 200, 255);}
 .footer .container .map iframe {padding: 5px;}
 .footer .container .dvlop {direction: ltr;}
 .footer .container .dvlop h5 {font-size: 20px;}
 .footer .container .dvlop li {font-size: 15px;padding: 10px;}
+.footer .container .dvlop li a:hover { color: rgb(0, 200, 255);}
 .footer .container .dvlop li span { font-size: 30px;}
 .footer .container .text .such .fa-facebook-f:hover {color: #5988e0;}
 .footer .container .text .such .fa-twitter:hover { color: rgb(0, 200, 255);}
