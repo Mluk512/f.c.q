@@ -187,6 +187,6 @@ header .container .image img {width: 70px;max-width: 100%;}
 /* start we */
 .me {background-color: var(--main-color);height: 100%;width: 100%;position: relative;}
 .me .container {text-align: center;}
-.me .container h2 {color: white;font-size: 15px;display: inline-flex;justify-content: center;align-items: center;}
-.me .container h2::after {content: "\f1f9"; font-family: "Font Awesome 5 Free"; font-weight: 900;margin: 4px 0 0 5px;font-size: 20px;align-items: center;display: inline-flex;justify-content: center;}
+.me .container h2 {color: white;font-size: 15px;display: inline-flex;justify-content: center;align-items: center;position: relative;}
+.me .container h2::after {content: "\f1f9"; font-family: "Font Awesome 5 Free"; font-weight: 900;margin: 4px 0 0 5px;font-size: 20px;align-items: center;display: inline-flex;justify-content: center;position: absolute;}
 /* end we */
