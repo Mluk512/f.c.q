@@ -17,6 +17,7 @@
 ::-webkit-scrollbar-thumb:hover {background-color:var(--main-color) ;}
 html {
     scroll-behavior: smooth;
+    background-color: var(--main-color);
 }
 body {
     font-family: 'Cairo', sans-serif;
@@ -169,13 +170,23 @@ header .container .image img {width: 70px;max-width: 100%;}
 .footer .container .text .qau h1 {font-size: 18px;}
 .footer .container .text .men li {font-size: 14px;padding: 10px;}
 .footer .container .text .such {}
-.footer .container .text .such i { color: white; margin-right: 20px; padding:10px; font-size: 15px; border: 3px solid white; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
-.footer .container .text .such i a {color: white;}
+.footer .container .text .such a { display: inline-flex; color: white; background-color:#313131 ; margin-right: 10px; padding:10px 13px; font-size: 15px; border: 2px solid white; transition:var(--main-tran) ; -webkit-transition:var(--main-tran) ; -moz-transition:var(--main-tran) ; -ms-transition:var(--main-tran) ; -o-transition:var(--main-tran) ; }
+.footer .container .text .such a i {}
+.footer .container .text .such a i:hover { color: rgb(0, 200, 255);}
 .footer .container .map iframe {padding: 5px;}
 .footer .container .dvlop {direction: ltr;}
 .footer .container .dvlop h5 {font-size: 20px;}
 .footer .container .dvlop li {font-size: 15px;padding: 10px;}
 .footer .container .dvlop li a {}
+.footer .container .dvlop li a:hover { color: rgb(0, 200, 255);}
+.footer .container .dvlop li span { font-size: 30px;}
 @media (max-width:992px) {.footer .container {flex-direction: column;text-align: center;}.footer .container .map iframe {margin-top: 10px;}}
 @media (max-width:767px) {.footer .container .map iframe {width: 300px;}}
 /* end footer */
+
+/* start we */
+.me {background-color: var(--main-color);height: 100%;width: 100%;position: relative;}
+.me .container {text-align: center;}
+.me .container h2 {color: white;font-size: 15px;display: inline-flex;justify-content: center;align-items: center;}
+.me .container h2::before {content: "\f1f9"; font-family: "Font Awesome 5 Free"; font-weight: 900;margin: 4px 0 0 5px;font-size: 20px;align-items: center;display: inline-flex;justify-content: center;}
+/* end we */
