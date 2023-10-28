@@ -158,7 +158,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 .Navigation .container .rounded .d-none .row {background-color:var(--main-color-alt);}
 .Navigation .container .rounded .d-none .row table {}
 .Navigation .container .rounded .d-none .row table tbody {}
-.Navigation .container .rounded .d-none .row table tbody tr {}
+.Navigation .container .rounded .d-none .row table tbody tr {background-color: ;}
 .Navigation .container .rounded .d-none .row table tbody tr td {color:#85153f;}
 .Navigation .container .rounded .d-none .row table tbody tr td a { color:black;}
 /* end Navigation */
