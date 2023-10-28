@@ -71,7 +71,7 @@ header .container ul li a:hover {color: #85153f;}
 header .container ul li:first-child a {color: var(--main-color);}
 header .container .image img {width: 70px;max-width: 100%;}
 @media (max-width:992px) {header .container {flex-direction: column;} header .container .image {order: -1;margin-bottom: 20px;}header {position: absolute;}}
-@media (max-width:767px) { header .container ul li a {padding: 10px;font-size: 8px;}header {position: absolute;}}
+@media (max-width:767px) { header .container ul li a {padding: 4px;font-size: 8px;}header {position: absolute;}}
 /* end header */
 
 /* start landing */
