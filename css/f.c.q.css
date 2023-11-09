@@ -60,16 +60,18 @@ ul {
 /* end global rulse */
 /* ---------------------------- */
 /* start header */
-header {top: 0;left: 0;width: 100%;height: 100%;z-index: 110;margin: auto;position: absolute;}
+header {top: 0;left: 0;width: 100%;height: 100%;z-index: 5;margin: auto;position: absolute;}
 header .container {display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: relative;margin-top: 20px;}
 header .container::before {content: "";background-color: white;height: 1px;width: calc(100% - 50px);position: absolute;bottom: -20px;left: 15px;}
 header .container ul {display: flex;}
 header .container ul li {position: relative;}
-header .container ul li a { color: white;padding:19px; font-size: 15px;font-weight: bold; transition:var(--main-tran) ; -webkit-transition:var(--main-tran) ; -moz-transition:var(--main-tran) ; -ms-transition:var(--main-tran) ; -o-transition:var(--main-tran) ; }
+header .container ul li::before { content: ""; background-color: var(--main-color); z-index: 100; width: 0; height: 4px; bottom: -50px; left: -5%; position: absolute; transition: var(--main-tran); -webkit-transition: var(--main-tran); -moz-transition: var(--main-tran); -ms-transition: var(--main-tran); -o-transition: var(--main-tran); }
+header .container ul li:hover::before {width: 100%;}
+header .container ul li a { color: white;padding:42px 10px; font-size: 15px;font-weight: bold; transition:var(--main-tran) ; -webkit-transition:var(--main-tran) ; -moz-transition:var(--main-tran) ; -ms-transition:var(--main-tran) ; -o-transition:var(--main-tran) ; }
 header .container ul li a:hover {color: #85153f;}
-header .container ul li:first-child a {color: var(--main-color);}
+header .container ul li:first-child a {color: var(--main-color);border-bottom: 2px solid var(--main-color);}
 header .container .image img {width: 70px;max-width: 100%;}
-@media (max-width:992px) {header .container {flex-direction: column;} header .container .image {order: -1;margin-bottom: 20px;}header {position: absolute;}}
+@media (max-width:992px) {header .container {flex-direction: column;} header .container .image {order: -1;margin-bottom: 20px;}header {position: absolute;}header .container ul li a {padding: 13px 21px;}header .container ul li::before {bottom: -20px;}}
 @media (max-width:767px) { header .container ul li a {padding: 4px;font-size: 8px;}}
 /* end header */
 
@@ -85,7 +87,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 
 /* start Admin */
 .Admin {padding-top: var(--main-top);padding-bottom: var(--main-bottom);background-color: var(--main-color-alt);position: relative;text-align: center;color: var(--main-color);}
-.Admin::before {content: "";background-image: url(../images/footpall.png);width: 100%;min-height: 100vh;position: absolute;top: 20px;right: 0px ;}
+.Admin::before {content: "";background-image: url(../images/footpall.png);width: 100%;min-height: 100%;position: absolute;top: 20px;right: 0px ;}
 .Admin .container {display: grid;grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));gap: 40px;margin-top: 100px;}
 .Admin .container .imag {z-index: 2;}
 .Admin .container .imag img { padding: 10px;width: 100px; max-width: 100%; border: 3px solid var(--main-color); border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
@@ -96,7 +98,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 
 /* start Activities */
 .Activities {background-color: var(--main-color);color: white;padding-top: var(--main-top);padding-bottom: var(--main-bottom);position: relative;}
-.Activities::before {content: "";background-image: url(../images/footpall002.png);width: 100%;min-height: 100vh;position: absolute;top: 20px;right: 0px ;}
+.Activities::before {content: "";background-image: url(../images/footpall002.png);width: 100%;min-height: 100%;position: absolute;top: 20px;right: 0px ;}
 .Activities .container {display: grid;grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));column-gap: 40px;row-gap: 40px;}
 .Activities .container .text { text-align: center; background-color: white; padding: 5px;z-index: 2; border-radius: 50% 50% 0 0; -webkit-border-radius: 50% 50% 0 0; -moz-border-radius: 50% 50% 0 0; -ms-border-radius: 50% 50% 0 0; -o-border-radius: 50% 50% 0 0; }
 .Activities .container .imag img {width: 150px;max-width: 100%;}
@@ -106,7 +108,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 
 /* start Aboutus */
 .Aboutus {padding-top: var(--main-top);padding-bottom: var(--main-bottom);background-color: var(--main-color-alt);position: relative;text-align: center;color: var(--main-color);}
-.Aboutus::before {content: "";background-image: url(../images/footpall.png);width: 100%;min-height: 100vh;position: absolute;top: 20px;right: 0px ;}
+.Aboutus::before {content: "";background-image: url(../images/footpall.png);width: 100%;min-height: 100%;position: absolute;top: 20px;right: 0px ;}
 .Aboutus .container .cont .text {display: flex;justify-content:space-between;align-items: center;flex-wrap:wrap;}
 .Aboutus .container .cont .text ul li {padding: 20px;font-weight: bold;font-size: 20px;}
 .Aboutus .container .cont .text ul li span {color: black;}
@@ -118,9 +120,9 @@ header .container .image img {width: 70px;max-width: 100%;}
 
 /* start Achievements */
 .Achievements {padding-top: var(--main-top);padding-bottom: var(--main-bottom);color:white;background-color: var(--main-color);position: relative;}
-.Achievements::before {content: "";background-image: url(../images/footpall002.png);width: 100%;min-height: 100vh;position: absolute;top: 20px;right: 0px ;}
+.Achievements::before {content: "";background-image: url(../images/footpall002.png);width: 100%;min-height: 100%;position: absolute;top: 20px;right: 0px ;}
 .Achievements .container {display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;}
-.Achievements .container .Achiev { margin-top: 80px;margin-bottom: 80px;text-align: center;border: 4px solid white;padding:10px 100px; border-radius:50% ; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; }
+.Achievements .container .Achiev { margin-top: 80px; margin-bottom: 80px; text-align: center; border: 4px solid white; padding:10px 75px; border-radius:50% ; -webkit-border-radius:50% ; -moz-border-radius:50% ; -ms-border-radius:50% ; -o-border-radius:50% ; }
 .Achievements .container .Achiev h2 {font-size: 60px;}
 .Achievements .container .Achiev h3 {font-size: 40px;}
 @media (max-width:992px) {.Achievements .container .Achiev {margin: auto;margin-bottom: 20px;}}
@@ -138,7 +140,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 
 /* start contactus */
 .contactus {padding-top: var(--main-top);padding-bottom: var(--main-bottom);background-color: var(--main-color-alt);color: var(--main-color);position: relative;}
-.contactus::before {content: "";background-image: url(../images/footpall.png);width: 100%;height: 100%;position: absolute;top: 20px;right: 0px ;}
+.contactus::before {content: "";background-image: url(../images/footpall.png);width: 100%;min-height: 100%;position: absolute;top: 20px;right: 0px ;}
 .contactus .container {display:flex;flex-direction: column;justify-content: space-between;align-items: center;}
 .contactus .container .text {margin-bottom: 120px;}
 .contactus .container .text h3 {font-size: 20px;line-height: 2;}
@@ -150,7 +152,7 @@ header .container .image img {width: 70px;max-width: 100%;}
 
 /* start Navigation */
 .Navigation {background-color: var(--main-color);padding-top: var(--main-top);padding-bottom: var(--main-bottom);position: relative;}
-.Navigation::before {content: "";background-image: url(../images/footpall002.png);width: 100%;height: 100%;position: absolute;top: 20px;right: 0px ;z-index: 1;}
+.Navigation::before {content: "";background-image: url(../images/footpall002.png);width: 100%;min-height: 100%;position: absolute;top: 20px;right: 0px ;z-index: 1;}
 .Navigation .container {position: relative;z-index: 100;}
 .Navigation .container .rounded {background: none;}
 .Navigation .container .rounded p {color: white;line-height: 2;}
